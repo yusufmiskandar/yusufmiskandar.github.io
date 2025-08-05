@@ -4,7 +4,7 @@ layout: post
 
 title: "Membangun Homelab dengan Ubuntu Server, Mikrotik, dan Docker"
 
-subtitle: "RT/RW Net (Hotspot Voucher \& PPPoE), Self-Hosted PDF, ERP, dan Cloud Pribadi"
+subtitle: "RT/RW Net (Hotspot Voucher & PPPoE), Self-Hosted PDF, ERP, dan Cloud Pribadi"
 
 date: 2025-08-05 09:00:00 -0500
 
@@ -18,7 +18,7 @@ tags: homelab ubuntu-server mikrotik docker traefik nextcloud rtrw-net hotspot-v
 
 # **Membangun Homelab dengan Ubuntu Server, Mikrotik, dan Docker**
 
-**RT/RW Net (Hotspot Voucher \& PPPoE), Self-Hosted PDF, ERP, dan Cloud Pribadi**
+**RT/RW Net (Hotspot Voucher & PPPoE), Self-Hosted PDF, ERP, dan Cloud Pribadi**
 
 Selamat datang di panduan lengkap membangun *homelab* serbaguna. Dalam artikel ini, kita akan mengubah perangkat sederhana di rumah menjadi infrastruktur IT yang kuat. Kita akan mengkonfigurasi jaringan kompleks menggunakan Mikrotik, menyiapkan server dengan Ubuntu, dan menjalankan berbagai aplikasi seperti Nextcloud, ERPNext, dan lainnya menggunakan Docker.
 
