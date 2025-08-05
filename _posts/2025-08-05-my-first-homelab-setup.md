@@ -1,16 +1,16 @@
-**---**
+---
 
-**layout: post**
+layout: post
 
-**title: "Membangun Homelab dengan Ubuntu Server, Mikrotik, dan Docker"**
+title: "Membangun Homelab dengan Ubuntu Server, Mikrotik, dan Docker"
 
-**date: 2025-08-05 09:00:00 -0500**
+date: 2025-08-05 09:00:00 -0500
 
-**categories: homelab**
+categories: homelab
 
-**tags: homelab ubuntu-server mikrotik docker traefik nextcloud rtrw-net hotspot-voucher**
+tags: homelab ubuntu-server mikrotik docker traefik nextcloud rtrw-net hotspot-voucher
 
-**---**
+---
 
 # 
 
