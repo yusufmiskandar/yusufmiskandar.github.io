@@ -7,7 +7,6 @@ categories: homelab netorking self-hosted
 tags: homelab ubuntu-server mikrotik docker traefik nextcloud rtrw-net hotspot-voucher
 ---
 
-# 
 
 # **Membangun Homelab dengan Ubuntu Server, Mikrotik, dan Docker**
 
@@ -26,7 +25,7 @@ Tujuan akhirnya adalah menciptakan sebuah sistem yang tidak hanya mendukung kebu
    * Konfigurasi WAN (ether1)
    * Membuat Bridge dan Alamat IP untuk Setiap Jaringan
    * Konfigurasi DHCP Server
-   * Konfigurasi DNS \& NAT
+   * Konfigurasi DNS & NAT
 
 3. **Langkah 2: Konfigurasi RT/RW Net (Hotspot \& PPPoE)**
 
@@ -41,10 +40,10 @@ Tujuan akhirnya adalah menciptakan sebuah sistem yang tidak hanya mendukung kebu
 
 5. **Langkah 4: Instalasi Docker dan Persiapan Layanan**
 
-   * Instalasi Docker \& Docker Compose
+   * Instalasi Docker & Docker Compose
    * Struktur Folder Proyek
 
-6. **Langkah 5: Deploy Layanan dengan Docker Compose \& Traefik**
+6. **Langkah 5: Deploy Layanan dengan Docker Compose & Traefik**
 
    * Membuat File docker-compose.yml
    * Penjelasan Konfigurasi Setiap Layanan
@@ -62,10 +61,10 @@ Sebelum memulai, mari kita visualisasikan kembali topologi jaringan yang akan ki
 * **Mikrotik RB450GX4**: Pusat dari semua jaringan.
 
   * ether1 (WAN): DHCP Client dari ISP (192.168.0.1/24).
-  * ether2 (Homelab): 192.168.11.1/24 -> Switch -> Ubuntu Server \& PC Admin.
+  * ether2 (Homelab): 192.168.11.1/24 -> Switch -> Ubuntu Server & PC Admin.
   * ether3 (CCTV): 192.168.22.1/24 -> AP untuk perangkat IoT.
   * ether4 (Home): 192.168.33.1/24 -> AP untuk pengguna rumah.
-  * ether5 (RT/RW Net): Trunk -> Switch Manageable -> AP Hotspot (VLAN 50) \& Client PPPoE (VLAN 80).
+  * ether5 (RT/RW Net): Trunk -> Switch Manageable -> AP Hotspot (VLAN 50) & Client PPPoE (VLAN 80).
 
 ### **Langkah 1: Konfigurasi Dasar Mikrotik RB450GX4**
 
@@ -125,7 +124,7 @@ Agar perangkat yang terhubung otomatis mendapatkan IP.
   * Buka tab **Action**, pilih **Action: masquerade**.
   * Klik **OK**.
 
-### **Langkah 2: Konfigurasi RT/RW Net (Hotspot \& PPPoE)**
+### **Langkah 2: Konfigurasi RT/RW Net (Hotspot & PPPoE)**
 
 Jaringan ini akan berjalan di atas ether5 menggunakan VLAN.
 
@@ -229,11 +228,14 @@ nameservers:
 addresses: \[8.8.8.8, 1.1.1.1]  
 version: 2
 ```
-Simpan file, lalu terapkan konfigurasi: sudo netplan apply.
+Simpan file, lalu terapkan konfigurasi:
+```shell
+sudo netplan apply.
+```
 
 ### **Langkah 4: Instalasi Docker dan Persiapan Layanan**
 
-#### **1. Instalasi Docker \& Docker Compose**
+#### **1. Instalasi Docker & Docker Compose**
 
 Jalankan perintah berikut di terminal Ubuntu Server Anda:
 
@@ -290,7 +292,7 @@ touch data/traefik/acme.json
 chmod 600 data/traefik/acme.json
 ```
 
-### **Langkah 5: Deploy Layanan dengan Docker Compose \& Traefik**
+### **Langkah 5: Deploy Layanan dengan Docker Compose & Traefik**
 
 Edit file docker-compose.yml yang baru saja Anda buat.
 
@@ -499,8 +501,10 @@ Karena tidak ada IP Publik, kita akan menggunakan Cloudflare Tunnel yang aman da
   nano ~/.cloudflared/config.yml
 ```
   Isi dengan konfigurasi berikut (ganti YOUR\_TUNNEL\_ID dan domain Anda):  
+```yaml
   tunnel: YOUR\_TUNNEL\_ID  
   credentials-file: /home/username/.cloudflared/YOUR\_TUNNEL\_ID.json # Sesuaikan path
+```
 
 ```json
   ingress:  
