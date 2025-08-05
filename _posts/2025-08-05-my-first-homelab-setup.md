@@ -4,6 +4,8 @@ layout: post
 
 title: "Membangun Homelab dengan Ubuntu Server, Mikrotik, dan Docker"
 
+subtitle: "RT/RW Net (Hotspot Voucher \& PPPoE), Self-Hosted PDF, ERP, dan Cloud Pribadi"
+
 date: 2025-08-05 09:00:00 -0500
 
 categories: homelab
