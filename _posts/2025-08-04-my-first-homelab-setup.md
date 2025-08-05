@@ -8,7 +8,6 @@ tags: homelab ubuntu-server mikrotik docker traefik nextcloud rtrw-net hotspot-v
 ---
 
 
-# **Membangun Homelab dengan Ubuntu Server, Mikrotik, dan Docker**
 
 **RT/RW Net (Hotspot Voucher & PPPoE), Self-Hosted PDF, ERP, dan Cloud Pribadi**
 
