@@ -3,7 +3,7 @@ layout: post
 title: "Membangun Homelab dengan Ubuntu Server, Mikrotik, dan Docker"
 subtitle: "RT/RW Net (Hotspot Voucher & PPPoE), Self-Hosted PDF, ERP, dan Cloud Pribadi"
 date: 2025-08-04 09:00:00 -0500
-categories: homelab netorking self-hosted
+categories: homelab networking
 tags: homelab ubuntu-server mikrotik docker traefik nextcloud rtrw-net hotspot-voucher
 ---
 
