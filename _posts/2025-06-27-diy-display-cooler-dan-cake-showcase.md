@@ -1,9 +1,17 @@
-# **Proyek: Memanfaatkan Freezer atau Kulkas Bekas Jadi Custom Cake Showcase 300L dengan Sistem Pendingin Paksa**
+---
+layout: post
+title: "DIY Custom Cake Showcase 300L dengan Sistem Pendingin Paksa"
+subtitle: "Panduan Teknis Rekayasa Ulang Freezer Bekas Menjadi Cake Showcase Profesional dengan Sistem Pendingin Paksa, Defrost Otomatis, dan Anti-Embun"
+date: 2025-06-27 09:00:00 -0500
+categories: diy rerigerasi elektrikal
+tags: diy display-cooler electrikal  
+---
+
+
+
+# **Proyek: DIY Custom Cake Showcase 300L dengan Sistem Pendingin Paksa**
 
 ## **Panduan Teknis Rekayasa Ulang Freezer Bekas Menjadi Cake Showcase Profesional dengan Sistem Pendingin Paksa, Defrost Otomatis, dan Anti-Embun**
-
-**Disusun oleh:** Yusuf Mochamad Iskandar  
-**Lokasi & Tanggal:** Bandung, 24 Juni 2025
 
 ### **Daftar Isi**
 
