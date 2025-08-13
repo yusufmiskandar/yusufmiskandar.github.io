@@ -1,6 +1,6 @@
 # Konfigurasi Backend (cara CMS berinteraksi dengan GitHub)
 backend:
-  name: github
+  name: git-gateway
   repo: yusufmiskandar/yusufmiskandar.github.io # GANTI DENGAN REPO ANDA, contoh: yusufmiskandar/yusufmiskandar.github.io
   branch: main # Atau 'master', sesuaikan dengan branch utama Anda
   base_url: https://yusufmiskandar.netlify.app
