@@ -5,8 +5,8 @@ backend:
   branch: main # Atau 'master', sesuaikan dengan branch utama Anda
 
 # Lokasi file media (gambar, dll) akan disimpan
-media_folder: "assets/img/posts" # Contoh lokasi penyimpanan gambar
-public_folder: "/assets/img/posts" # Contoh path publik untuk gambar
+media_folder: "assets/img/posts"
+public_folder: "/assets/img/posts"
 
 # Tentukan "Collection" atau tipe konten yang bisa diedit
 # Kita akan buat satu collection untuk "Posts" (artikel blog)
