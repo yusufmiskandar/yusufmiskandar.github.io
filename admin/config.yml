@@ -1,0 +1,25 @@
+# Konfigurasi Backend (cara CMS berinteraksi dengan GitHub)
+backend:
+  name: github
+  repo: yusufmiskandar/yusufmiskandar.github.io # GANTI DENGAN REPO ANDA, contoh: yusufmiskandar/yusufmiskandar.github.io
+  branch: main # Atau 'master', sesuaikan dengan branch utama Anda
+
+# Lokasi file media (gambar, dll) akan disimpan
+media_folder: "assets/img/posts" # Contoh lokasi penyimpanan gambar
+public_folder: "/assets/img/posts" # Contoh path publik untuk gambar
+
+# Tentukan "Collection" atau tipe konten yang bisa diedit
+# Kita akan buat satu collection untuk "Posts" (artikel blog)
+collections:
+  - name: "posts" # Nama identifier untuk collection
+    label: "Posts" # Label yang muncul di antarmuka CMS
+    folder: "_posts" # Folder di mana file-file post disimpan
+    create: true # Izinkan membuat file baru
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Format nama file, contoh: 2025-08-14-judul-baru.md
+    fields: # Definisikan field-field yang ada di setiap post
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Categories", name: "categories", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
