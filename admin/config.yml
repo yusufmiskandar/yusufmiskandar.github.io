@@ -3,7 +3,7 @@ backend:
   name: github
   repo: yusufmiskandar/yusufmiskandar.github.io # GANTI DENGAN REPO ANDA, contoh: yusufmiskandar/yusufmiskandar.github.io
   branch: main # Atau 'master', sesuaikan dengan branch utama Anda
-  base_url: https://comfy-douhua-fe87d3.netlify.app
+  base_url: https://yusufmiskandar.netlify.app
 
 # Lokasi file media (gambar, dll) akan disimpan
 media_folder: "assets/img/posts"
